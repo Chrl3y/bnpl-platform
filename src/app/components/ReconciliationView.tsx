@@ -128,10 +128,10 @@ export function ReconciliationView() {
           records.map((record) => (
             <TableRow key={record.id}>
               <TableCell className="font-medium">{record.date}</TableCell>
-              <TableCell>KES {record.expected_amount.toLocaleString()}</TableCell>
-              <TableCell>KES {record.actual_amount.toLocaleString()}</TableCell>
+              <TableCell>UGX {record.expected_amount.toLocaleString()}</TableCell>
+              <TableCell>UGX {record.actual_amount.toLocaleString()}</TableCell>
               <TableCell className={record.variance !== 0 ? 'text-red-600 font-semibold' : 'text-green-600'}>
-                KES {Math.abs(record.variance).toLocaleString()}
+                UGX {Math.abs(record.variance).toLocaleString()}
               </TableCell>
               <TableCell>
                 <Badge className={STATUS_COLORS[record.status]}>
@@ -213,7 +213,7 @@ export function ReconciliationView() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-red-600">
-              KES {(summary?.total_variance_amount || 0).toLocaleString()}
+              UGX {(summary?.total_variance_amount || 0).toLocaleString()}
             </div>
             <p className="text-xs text-gray-500 mt-1">Discrepancy</p>
           </CardContent>
@@ -241,7 +241,7 @@ export function ReconciliationView() {
                 <div className="flex justify-between">
                   <span className="text-sm text-gray-500">Variance Amount:</span>
                   <span className="font-semibold text-red-600">
-                    KES {(typeData?.variance_amount || 0).toLocaleString()}
+                    UGX {(typeData?.variance_amount || 0).toLocaleString()}
                   </span>
                 </div>
               </CardContent>

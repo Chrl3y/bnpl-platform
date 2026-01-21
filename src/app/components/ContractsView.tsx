@@ -214,9 +214,9 @@ export function ContractsView() {
                       <TableCell className="font-medium">
                         {contract.policy_number}
                       </TableCell>
-                      <TableCell>KES {contract.principal_amount.toLocaleString()}</TableCell>
+                      <TableCell>UGX {contract.principal_amount.toLocaleString()}</TableCell>
                       <TableCell>{contract.tenor_months} months</TableCell>
-                      <TableCell>KES {contract.total_payable.toLocaleString()}</TableCell>
+                      <TableCell>UGX {contract.total_payable.toLocaleString()}</TableCell>
                       <TableCell>
                         <Badge className={STATE_COLORS[contract.state]}>
                           {contract.state.replace(/_/g, ' ')}
@@ -256,10 +256,10 @@ export function ContractsView() {
                                     <div className="space-y-2 text-sm">
                                       <div><span className="text-gray-500">Policy Number:</span> {selectedContract.policy_number}</div>
                                       <div><span className="text-gray-500">Order ID:</span> {selectedContract.order_id}</div>
-                                      <div><span className="text-gray-500">Principal:</span> KES {selectedContract.principal_amount.toLocaleString()}</div>
-                                      <div><span className="text-gray-500">Total Payable:</span> KES {selectedContract.total_payable.toLocaleString()}</div>
+                                      <div><span className="text-gray-500">Principal:</span> UGX {selectedContract.principal_amount.toLocaleString()}</div>
+                                      <div><span className="text-gray-500">Total Payable:</span> UGX {selectedContract.total_payable.toLocaleString()}</div>
                                       <div><span className="text-gray-500">Tenor:</span> {selectedContract.tenor_months} months</div>
-                                      <div><span className="text-gray-500">Installment:</span> KES {selectedContract.installment_amount.toLocaleString()}/month</div>
+                                      <div><span className="text-gray-500">Installment:</span> UGX {selectedContract.installment_amount.toLocaleString()}/month</div>
                                     </div>
                                   </div>
                                   <div>

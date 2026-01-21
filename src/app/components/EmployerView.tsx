@@ -176,7 +176,7 @@ EMP003,11223344,Bob Johnson,+254734567890,45000`;
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
               <h4 className="font-semibold text-gray-900 mb-2">Business Rules</h4>
               <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
-                <li>Minimum net salary: KES 15,000</li>
+                <li>Minimum net salary: UGX 150,000</li>
                 <li>Maximum debt service ratio: 33%</li>
                 <li>Pricing: 12% per month (7% interest + 2% ops + 3% collection)</li>
                 <li>Tenors: 1, 2, or 3 months only</li>

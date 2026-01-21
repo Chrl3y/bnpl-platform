@@ -119,7 +119,7 @@ export function DashboardOverview() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              KES {(kpis?.total_disbursed || 0).toLocaleString()}
+              UGX {(kpis?.total_disbursed || 0).toLocaleString()}
             </div>
             <p className="text-xs text-gray-500 mt-1">Principal disbursed</p>
           </CardContent>
@@ -132,7 +132,7 @@ export function DashboardOverview() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              KES {(kpis?.total_outstanding || 0).toLocaleString()}
+              UGX {(kpis?.total_outstanding || 0).toLocaleString()}
             </div>
             <p className="text-xs text-gray-500 mt-1">Total receivables</p>
           </CardContent>
@@ -166,7 +166,7 @@ export function DashboardOverview() {
               {(kpis?.par_1_percentage || 0).toFixed(2)}%
             </div>
             <p className="text-sm text-gray-500 mt-2">
-              KES {(kpis?.par_1_amount || 0).toLocaleString()} past due
+              UGX {(kpis?.par_1_amount || 0).toLocaleString()} past due
             </p>
           </CardContent>
         </Card>
@@ -183,7 +183,7 @@ export function DashboardOverview() {
               {(kpis?.par_30_percentage || 0).toFixed(2)}%
             </div>
             <p className="text-sm text-gray-500 mt-2">
-              KES {(kpis?.par_30_amount || 0).toLocaleString()} overdue 30+ days
+              UGX {(kpis?.par_30_amount || 0).toLocaleString()} overdue 30+ days
             </p>
           </CardContent>
         </Card>
@@ -200,7 +200,7 @@ export function DashboardOverview() {
               {(kpis?.repayment_completion_rate || 0).toFixed(2)}%
             </div>
             <p className="text-sm text-gray-500 mt-2">
-              KES {(kpis?.total_paid || 0).toLocaleString()} collected
+              UGX {(kpis?.total_paid || 0).toLocaleString()} collected
             </p>
           </CardContent>
         </Card>
@@ -260,7 +260,7 @@ export function DashboardOverview() {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip 
-                  formatter={(value) => `KES ${(value as number).toLocaleString()}`}
+                  formatter={(value) => `UGX ${(value as number).toLocaleString()}`}
                 />
                 <Legend />
                 <Bar dataKey="Disbursed" fill="#10b981" />

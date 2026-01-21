@@ -179,23 +179,23 @@ export function MerchantSimulator() {
                 <div className="space-y-1 text-blue-700">
                   <div className="flex justify-between">
                     <span>Principal:</span>
-                    <span>KES {order.payment_details.principal.toLocaleString()}</span>
+                    <span>UGX {order.payment_details.principal.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Interest (7%):</span>
-                    <span>KES {order.payment_details.interest.toLocaleString()}</span>
+                    <span>UGX {order.payment_details.interest.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Fees (5%):</span>
-                    <span>KES {(order.payment_details.operational_fee + order.payment_details.collection_fee).toLocaleString()}</span>
+                    <span>UGX {(order.payment_details.operational_fee + order.payment_details.collection_fee).toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between font-bold border-t border-blue-200 pt-1">
                     <span>Total:</span>
-                    <span>KES {order.payment_details.total_payable.toLocaleString()}</span>
+                    <span>UGX {order.payment_details.total_payable.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between text-xs">
                     <span>Monthly:</span>
-                    <span>KES {order.payment_details.installment_amount.toLocaleString()}</span>
+                    <span>UGX {order.payment_details.installment_amount.toLocaleString()}</span>
                   </div>
                 </div>
               </div>
